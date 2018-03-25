@@ -5,7 +5,7 @@ var path = require("path");
 var app = express();
 var bodyParser = require("body-parser");
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://hla191:t4H3DpQ1@127.0.0.1.27017/cmpt218_hla191?authSource=admin');
+mongoose.connect('mongodb://<>');
 var db = mongoose.connection;
 
 db.once('open', function(){	console.log('Connection success');
@@ -193,5 +193,5 @@ app.post('/thankyou.html', function(req,res,next){
 
 });
 
-app.listen(11526);
+app.listen(8080);
 console.log("Server is running at port 8080");
