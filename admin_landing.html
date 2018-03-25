@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<link rel = "stylesheet", href = "./style.css">
+</header>
+<body>
+	ADMIN LANDING <br>
+	<!--  form data will be sent to given html -->
+	<form id = "admin_landing_form" method = "POST">
+		CHECK-IN ID:<br>
+		<input id = "check_in_id" name = "admin_check_in_id" type = "text", placeholder="CHECK-IN ID"><br>
+		<br>
+		<input id = "start_check_in_btn"	type = "submit" value = "START CHECK-IN" formaction="/check_in_stop.html"><br>
+		<input id = "view_history_btn"	type = "submit" value = "VIEW HISTORY" formaction="/viewHistory.html"><br>
+		<br>
+	</form>
+</body>
+</html>
